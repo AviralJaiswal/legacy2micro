@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Target System & Reports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name">ai-service-log-analysis</span>
+          <span class="ap-badge">v0.1.0</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item active">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill">On track</span>
+        </div>
+        <div class="health-bar"><span style="width:68%"></span></div>
+        <p class="health-text">68% of approved scope migrated</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project">ai-service-log-analysis</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release">Reports</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <div class="page-head-row">
+          <div>
+            <h1>Target system & reports</h1>
+            <p class="page-sub">Review approved, migrated components, generated artifacts, audit history, and remaining source dependencies.</p>
+          </div>
+          <div class="page-head-actions">
+            <button data-action="open-repo" class="btn btn-secondary">Open target repository</button>
+            <button data-action="download-docs" class="btn btn-primary">Download documentation</button>
+          </div>
+        </div>
+
+        <div class="rep-stats">
+          <div class="rep-stat">
+            <div class="rep-stat-value">33%</div>
+            <div class="rep-stat-label">Migration completion</div>
+            <div class="rep-stat-sub">12 of 36 components</div>
+          </div>
+          <div class="rep-stat">
+            <div class="rep-stat-value" style="color:var(--pa-green);">12</div>
+            <div class="rep-stat-label">Approved components</div>
+            <div class="rep-stat-sub">Ready for target system</div>
+          </div>
+          <div class="rep-stat">
+            <div class="rep-stat-value">29</div>
+            <div class="rep-stat-label">Generated files</div>
+            <div class="rep-stat-sub">Java, SQL, config</div>
+          </div>
+          <div class="rep-stat">
+            <div class="rep-stat-value">3</div>
+            <div class="rep-stat-label">Migration runs</div>
+            <div class="rep-stat-sub">2 approved</div>
+          </div>
+          <div class="rep-stat">
+            <div class="rep-stat-value" style="color:var(--pa-amber);">24</div>
+            <div class="rep-stat-label">Source dependencies</div>
+            <div class="rep-stat-sub">Remaining in monolith</div>
+          </div>
+        </div>
+
+        <div class="rep-layout">
+
+          <div style="display:flex; flex-direction:column; gap:16px;">
+
+            <div class="card">
+              <div class="card-head">
+                <h2>Target system inventory</h2>
+                <div style="display:flex; gap:8px;">
+                  <span class="tag tag-green">12 approved</span>
+                  <span class="tag tag-blue">1 generating</span>
+                  <span class="tag tag-amber">1 validation</span>
+                </div>
+              </div>
+              <table class="rep-table">
+                <thead>
+                  <tr>
+                    <th>File</th>
+                    <th>Approved</th>
+                    <th>Status</th>
+                    <th>Approved at</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>LogAnalyzerService.py</strong></td>
+                    <td>3</td>
+                    <td><span class="status-badge sb-migrating">Generated</span></td>
+                    <td>Today 11:08</td>
+                  </tr>
+                  <tr>
+                    <td><strong>LogController.py</strong></td>
+                    <td>38</td>
+                    <td><span class="status-badge sb-migrating">Generated</span></td>
+                    <td>Today 11:08</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IncidentAdapter.py</strong></td>
+                    <td>35</td>
+                    <td><span class="status-badge sb-migrating">Generated</span></td>
+                    <td>Today 11:07</td>
+                  </tr>
+                  <tr>
+                    <td><strong>AccountLedgerPort.java</strong></td>
+                    <td>28</td>
+                    <td><span class="status-badge sb-validation">Approved</span></td>
+                    <td>Today 10:52</td>
+                  </tr>
+                  <tr>
+                    <td><strong>QdrantRetrieverAdapter.java</strong></td>
+                    <td>24</td>
+                    <td><span class="status-badge sb-validation">Approved</span></td>
+                    <td>Today 10:48</td>
+                  </tr>
+                  <tr>
+                    <td><strong>LogClassifier.py</strong></td>
+                    <td>19</td>
+                    <td><span class="status-badge sb-analyzing">Validation</span></td>
+                    <td>Pending</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card">
+              <div class="card-head"><h2>Reports & documentation</h2><a href="#" class="link">Download all</a></div>
+              <div class="rep-cards">
+                <div class="rep-card">
+                  <div class="rep-card-icon si-blue">
+                    <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5z" fill="currentColor"/></svg>
+                  </div>
+                  <h4>Migration completion summary</h4>
+                  <p>Overall progress, milestones, and remaining work</p>
+                </div>
+                <div class="rep-card">
+                  <div class="rep-card-icon si-purple">
+                    <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+                  </div>
+                  <h4>Dependency disposition report</h4>
+                  <p>All 34 dependencies mapped and dispositioned</p>
+                </div>
+                <div class="rep-card">
+                  <div class="rep-card-icon si-green">
+                    <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+                  </div>
+                  <h4>Target architecture documentation</h4>
+                  <p>Generated from approved migration history</p>
+                </div>
+                <div class="rep-card">
+                  <div class="rep-card-icon si-amber">
+                    <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+                  </div>
+                  <h4>Generated API & event contracts</h4>
+                  <p>OpenAPI specs and AsyncAPI event schemas</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+
+            <div class="card">
+              <div class="card-head"><h2>Remaining source dependencies</h2></div>
+              <div style="text-align:center; padding:10px 0 14px;">
+                <div style="font-size:36px; font-weight:800; color:var(--pa-amber);">24</div>
+                <div style="font-size:12px; color:var(--text-3);">of 1,23 total components</div>
+                <div class="progress" style="width:100%; margin-top:12px;"><span class="bar-amber" style="width:33%"></span></div>
+                <div style="font-size:11px; color:var(--text-3); margin-top:6px;">33% still in source system</div>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px; font-size:12px;">
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-2);">Migrated modules</span><strong>28</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-2);">Shared modules</span><strong>5</strong></div>
+                <div style="display:flex; justify-content:space-between;"><span style="color:var(--text-2);">External dependencies</span><strong>3</strong></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head"><h2>Migration history</h2><a href="#" class="link">Full history</a></div>
+              <div class="timeline">
+                <div class="timeline-item active">
+                  <div class="timeline-dot">&#9679;</div>
+                  <div class="timeline-body">
+                    <div class="timeline-title">Migration run #3 in progress</div>
+                    <div class="timeline-meta">Payments scope · 33% complete</div>
+                  </div>
+                </div>
+                <div class="timeline-item done">
+                  <div class="timeline-dot">&#10003;</div>
+                  <div class="timeline-body">
+                    <div class="timeline-title">Migration run #83 completed</div>
+                    <div class="timeline-meta">12 components approved · Today 10:26 AM</div>
+                  </div>
+                </div>
+                <div class="timeline-item done">
+                  <div class="timeline-dot">&#10003;</div>
+                  <div class="timeline-body">
+                    <div class="timeline-title">Architecture review approved</div>
+                    <div class="timeline-meta">8 boundaries confirmed · Today 09:15 AM</div>
+                  </div>
+                </div>
+                <div class="timeline-item done">
+                  <div class="timeline-dot">&#10003;</div>
+                  <div class="timeline-body">
+                    <div class="timeline-title">Code analysis completed</div>
+                    <div class="timeline-meta">179 files analyzed · Yesterday 04:32 PM</div>
+                  </div>
+                </div>
+                <div class="timeline-item done">
+                  <div class="timeline-dot">&#10003;</div>
+                  <div class="timeline-body">
+                    <div class="timeline-title">Source repository synchronized</div>
+                    <div class="timeline-meta">ai-service-log-analysis · main · Yesterday 02:18 PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

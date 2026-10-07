@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Modernization Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name" id="sidebarProjectName">—</span>
+          <span class="ap-badge" id="sidebarProjectVersion">—</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item active">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="upload.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill" id="sidebarHealthLabel">—</span>
+        </div>
+        <div class="health-bar"><span id="sidebarHealthBar" style="width:0%"></span></div>
+        <p class="health-text" id="sidebarHealthText">—</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project" id="crumbProject">—</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release" id="crumbVersion">—</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-head">
+          <div>
+            <h1>Modernization portfolio</h1>
+            <p class="page-sub">Track incremental, dependency-aware migration across your project estate.</p>
+          </div>
+          <div class="page-actions">
+            <button class="btn btn-secondary" data-action="import-report">
+              <svg viewBox="0 0 20 20"><path d="M10 3l4 4h-3v6h-2V7H6l4-4zM4 15h12v2H4v-2z" fill="currentColor"/></svg>
+              Import report
+            </button>
+            <button class="btn btn-primary" data-action="new-project">
+              <svg viewBox="0 0 20 20"><path d="M10 4a1 1 0 011 1v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H5a1 1 0 110-2h4V5a1 1 0 011-1z" fill="currentColor"/></svg>
+              New Modernization Project
+            </button>
+          </div>
+        </div>
+
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <section class="panel-row">
+          <div class="card projects-card">
+            <div class="card-head">
+              <h2>Recent migration projects</h2>
+              <a href="#" class="link" data-action="view-all">View all</a>
+            </div>
+            <table class="projects-table">
+              <thead>
+                <tr><th>Project</th><th>Files</th><th>Progress</th><th>Status</th></tr>
+              </thead>
+              <tbody id="projectsTableBody"></tbody>
+            </table>
+          </div>
+
+          <div class="card atlas-card">
+            <div class="card-head">
+              <h2>Project progress</h2>
+              <span class="atlas-scope" id="progressScope">—</span>
+            </div>
+            <div class="atlas-rows" id="progressRows"></div>
+            <div class="atlas-note">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" fill="currentColor"/></svg>
+              3 shared dependencies stay in the source system until downstream consumers are approved.
+            </div>
+          </div>
+        </section>
+
+        <section class="activity-section">
+          <div class="card-head">
+            <h2>Recent activity</h2>
+            <span class="live-badge"><span class="live-dot"></span>Live</span>
+          </div>
+          <div class="activity-grid" id="activityGrid"></div>
+        </section>
+
+        <div class="sync-banner">
+          <div class="sync-icon">
+            <svg viewBox="0 0 20 20"><path d="M10 3a7 7 0 016.3 4H14v2h5V4h-2v1.6A9 9 0 1019 10h-2a7 7 0 11-7-7zm-1 4H7v2h2v5h2V9h2V7H9V5H7v2h2v0z" fill="currentColor"/></svg>
+          </div>
+          <div class="sync-body">
+            <span class="sync-title" id="syncTitle">—</span>
+            <span class="sync-meta" id="syncMeta">—</span>
+          </div>
+          <button class="btn btn-ghost" data-action="view-diff">View diff</button>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+  <script>
+    (function render() {
+      const p = LocalDB.get('project');
+      const s = LocalDB.get('stats');
+      const prog = LocalDB.get('progress');
+      const act = LocalDB.get('activity');
+      const sync = LocalDB.get('sync');
+
+      document.getElementById('sidebarProjectName').textContent = p.name;
+      document.getElementById('sidebarProjectVersion').textContent = p.version;
+      document.getElementById('crumbProject').textContent = p.name;
+      document.getElementById('crumbVersion').textContent = p.version;
+      document.getElementById('sidebarHealthLabel').textContent = p.healthLabel;
+      document.getElementById('sidebarHealthBar').style.width = p.health + '%';
+      document.getElementById('sidebarHealthText').textContent = p.health + '% of approved scope migrated';
+
+      document.getElementById('statsGrid').innerHTML = [
+        { icon: 'si-blue', label: 'Total files analyzed', value: s.totalFiles, delta: s.totalFilesDelta, deltaCls: 'up' },
+        { icon: 'si-purple', label: 'Dependencies discovered', value: s.dependencies, delta: s.dependenciesDelta, deltaCls: 'warn' },
+        { icon: 'si-green', label: 'Approved migrations', value: s.approved, delta: s.approvedDelta, deltaCls: 'up' },
+        { icon: 'si-amber', label: 'Bounded contexts remaining', value: s.contextsRemaining, suffix: '%', delta: s.contextsRemainingDelta, deltaCls: '' },
+      ].map(st => '<div class="stat-card"><div class="stat-icon ' + st.icon + '"><svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg></div><div class="stat-body"><span class="stat-label">' + st.label + '</span><span class="stat-value" data-count="' + st.value + '"' + (st.suffix ? ' data-suffix="' + st.suffix + '"' : '') + '>0</span><span class="stat-delta ' + st.deltaCls + '">' + st.delta + '</span></div></div>').join('');
+
+      document.getElementById('projectsTableBody').innerHTML = LocalDB.get('projects').map(pr => '<tr><td><div class="proj-name">' + pr.name + '</div><div class="proj-tech">' + pr.tech + '</div></td><td class="num">' + pr.files.toLocaleString() + '</td><td><div class="progress"><span class="' + (pr.progress > 60 ? 'bar-blue' : pr.progress > 30 ? 'bar-purple' : 'bar-amber') + '" style="width:' + pr.progress + '%"></span></div><span class="progress-pct">' + pr.progress + '%</span></td><td><span class="status-badge ' + pr.statusClass + '">' + pr.status + '</span></td></tr>').join('');
+
+      document.getElementById('progressScope').textContent = prog.scope;
+      document.getElementById('progressRows').innerHTML = [prog.codeAnalysis, prog.archReview, prog.aiMigration, prog.validation].map(r => '<div class="atlas-row"><div class="atlas-row-head"><span class="atlas-label">' + r.label + '</span><span class="atlas-val">' + r.value + '</span></div><div class="progress"><span class="' + r.bar + '" style="width:' + r.pct + '%"></span></div></div>').join('');
+
+      document.getElementById('activityGrid').innerHTML = act.map(a => '<div class="activity-card"><div class="activity-icon ' + a.icon + '"><svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg></div><div class="activity-body"><span class="activity-title">' + a.title + '</span><span class="activity-meta">' + a.meta + '</span></div></div>').join('');
+
+      document.getElementById('syncTitle').textContent = sync.title;
+      document.getElementById('syncMeta').textContent = sync.meta;
+    })();
+  </script>
+</body>
+</html>

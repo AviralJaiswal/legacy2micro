@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Validation & Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name">ai-service-log-analysis</span>
+          <span class="ap-badge">v0.1.0</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item active">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill">On track</span>
+        </div>
+        <div class="health-bar"><span style="width:68%"></span></div>
+        <p class="health-text">68% of approved scope migrated</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project">ai-service-log-analysis</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release">Validation</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <div class="page-head-row">
+          <div>
+            <h1>Validation & results</h1>
+            <p class="page-sub">Compare compilation, unit tests, behavior, and performance before any approved outputs enter the target system.</p>
+          </div>
+          <div class="page-head-actions">
+            <button data-action="send-failures" class="btn btn-secondary">Send failures to AI</button>
+            <button data-action="approve-outputs" class="btn btn-primary">Approve validated outputs</button>
+          </div>
+        </div>
+
+        <div class="val-stats">
+          <div class="val-stat">
+            <div class="val-stat-icon si-green">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+            </div>
+            <div class="val-stat-value" style="color:var(--pa-green);">Passed</div>
+            <div class="val-stat-label">Compilation</div>
+            <div class="val-stat-sub up">0 errors</div>
+          </div>
+          <div class="val-stat">
+            <div class="val-stat-icon si-blue">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+            </div>
+            <div class="val-stat-value">98.9%</div>
+            <div class="val-stat-label">Automated tests</div>
+            <div class="val-stat-sub up">812 passed</div>
+          </div>
+          <div class="val-stat">
+            <div class="val-stat-icon si-purple">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+            </div>
+            <div class="val-stat-value">99.7%</div>
+            <div class="val-stat-label">Behavioral parity</div>
+            <div class="val-stat-sub up">83 matched</div>
+          </div>
+          <div class="val-stat">
+            <div class="val-stat-icon si-amber">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" fill="currentColor"/></svg>
+            </div>
+            <div class="val-stat-value" style="color:var(--pa-amber);">3</div>
+            <div class="val-stat-label">Unresolved issues</div>
+            <div class="val-stat-sub warn">1 failed · 2 review</div>
+          </div>
+          <div class="val-stat">
+            <div class="val-stat-icon si-green">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+            </div>
+            <div class="val-stat-value">+8.4%</div>
+            <div class="val-stat-label">Performance</div>
+            <div class="val-stat-sub up">vs source baseline</div>
+          </div>
+        </div>
+
+        <div class="panel-row" style="grid-template-columns: 1.6fr 1fr;">
+
+          <div class="card">
+            <div class="card-head">
+              <h2>Automated test results</h2>
+              <div style="display:flex; gap:8px;">
+                <span class="tag tag-green">12 passed</span>
+                <span class="tag tag-red">1 failed</span>
+                <span class="tag tag-amber">0 needs review</span>
+              </div>
+            </div>
+            <table class="val-table">
+              <thead>
+                <tr>
+                  <th>Suite</th>
+                  <th>Type</th>
+                  <th>Cases</th>
+                  <th>Duration</th>
+                  <th>Result</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>LogAnalyzerServiceTest</strong></td>
+                  <td><span class="tag tag-blue">Unit</span></td>
+                  <td>48 / 48</td>
+                  <td>2.8s</td>
+                  <td><span class="val-result pass">Passed</span></td>
+                  <td><a href="#" class="link">Details</a></td>
+                </tr>
+                <tr>
+                  <td><strong>LogControllerTest</strong></td>
+                  <td><span class="tag tag-purple">Behavioral</span></td>
+                  <td>31 / 31</td>
+                  <td>9.4s</td>
+                  <td><span class="val-result pass">Passed</span></td>
+                  <td><a href="#" class="link">Details</a></td>
+                </tr>
+                <tr>
+                  <td><strong>IncidentAdapterIntegrationTest</strong></td>
+                  <td><span class="tag tag-green">Integration</span></td>
+                  <td>12 / 12</td>
+                  <td>18.1s</td>
+                  <td><span class="val-result pass">Passed</span></td>
+                  <td><a href="#" class="link">Details</a></td>
+                </tr>
+                <tr>
+                  <td><strong>LogConcurrencyTest</strong></td>
+                  <td><span class="tag tag-amber">Performance</span></td>
+                  <td>8 / 8</td>
+                  <td>4.7s</td>
+                  <td><span class="val-result pass">Passed</span></td>
+                  <td><a href="#" class="link">Details</a></td>
+                </tr>
+                <tr>
+                  <td><strong>LogClassifierReflectionTest</strong></td>
+                  <td><span class="tag tag-red">Unit</span></td>
+                  <td>5 / 5</td>
+                  <td>34.2s</td>
+                  <td><span class="val-result fail">Failed</span></td>
+                  <td><a href="#" class="link">Review</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+
+            <div class="card">
+              <div class="card-head"><h2>Behavioral comparison</h2><span class="tag tag-green">Passed</span></div>
+              <p style="font-size:12.5px; color:var(--text-2); line-height:1.6;">Generated output matches source system behavior across 37 test scenarios. Event contracts, transaction boundaries, and error handling are preserved.</p>
+            </div>
+
+            <div class="card">
+              <div class="card-head"><h2>Performance metrics</h2><span class="tag tag-green">Improved</span></div>
+              <div style="display:flex; flex-direction:column; gap:10px;">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <span style="font-size:12.5px; color:var(--text-2);">p50 latency</span>
+                  <span style="font-size:12.5px; font-weight:600; color:var(--pa-green);">72 ms &#833; 14.3%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <span style="font-size:12.5px; color:var(--text-2);">p99 latency</span>
+                  <span style="font-size:12.5px; font-weight:600; color:var(--pa-green);">218 ms &#833; 8.4%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <span style="font-size:12.5px; color:var(--text-2);">DB connections</span>
+                  <span style="font-size:12.5px; font-weight:600; color:var(--pa-green);">42 avg &#833; 37.0%</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <span style="font-size:12.5px; color:var(--text-2);">Memory</span>
+                  <span style="font-size:12.5px; font-weight:600; color:var(--pa-green);">3.2 GB &#833; 18.7%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head"><h2>Unresolved issues</h2><span class="tag tag-amber">3 items</span></div>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div style="padding:10px 12px; background:var(--pa-red-soft); border-radius:8px; font-size:12px; color:#B91C1C;">
+                  <strong>1 failed contract</strong><br/>LogClassifier reflection target not resolved
+                </div>
+                <div style="padding:10px 12px; background:var(--pa-amber-soft); border-radius:8px; font-size:12px; color:#92600A;">
+                  <strong>2 items need review</strong><br/>LogAnalyzerService and IncidentAdapter remain in validation
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="val-approve-card">
+          <div class="val-approve-icon">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          </div>
+          <div class="val-approve-body">
+            <div class="val-approve-title">Approve validated outputs?</div>
+            <div class="val-approve-text">12 files passed validation and are ready to be committed to the target system. 0 files require review before approval.</div>
+          </div>
+          <div style="display:flex; gap:10px; flex-shrink:0;">
+            <button class="btn btn-secondary" style="background:rgba(255,255,255,0.1); color:#C7D2E8; border-color:rgba(255,255,255,0.2);" data-action="cancel-approve">Cancel</button>
+            <button class="btn btn-primary" data-action="approve-outputs">Approve 12 outputs</button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

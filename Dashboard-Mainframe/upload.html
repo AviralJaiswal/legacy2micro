@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Create Project & Upload Source</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name">ai-service-log-analysis</span>
+          <span class="ap-badge">v0.1.0</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill">On track</span>
+        </div>
+        <div class="health-bar"><span style="width:68%"></span></div>
+        <p class="health-text">68% of approved scope migrated</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project">ai-service-log-analysis</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release">v0.1.0</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <div class="page-head-row">
+          <div>
+            <h1>Create project & upload source</h1>
+            <p class="page-sub">Connect the project, confirm processing limits, and prepare a complete source inventory.</p>
+          </div>
+          <div class="page-head-actions">
+            <button data-action="save-draft" class="btn btn-secondary">Save draft</button>
+            <button data-action="start-analysis" class="btn btn-primary">Start Analysis</button>
+          </div>
+        </div>
+
+        <div class="steps-bar">
+          <div class="step-item active">
+            <span class="step-num">1</span>
+            <span class="step-label">Project details</span>
+          </div>
+          <div class="step-item done">
+            <span class="step-num">&#10003;</span>
+            <span class="step-label">Connect repository</span>
+          </div>
+          <div class="step-item">
+            <span class="step-num">3</span>
+            <span class="step-label">Upload source</span>
+          </div>
+          <div class="step-item">
+            <span class="step-num">4</span>
+            <span class="step-label">Processing</span>
+          </div>
+        </div>
+
+        <div class="panel-row" style="grid-template-columns: 1.4fr 1fr;">
+
+          <div style="display:flex; flex-direction:column; gap:16px;">
+
+            <div class="card">
+              <div class="card-head"><h2>Project details</h2></div>
+              <div class="form-group">
+                <label class="form-label">Project name</label>
+                <input class="form-input" type="text" value="ai-service-log-analysis" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Source stack</label>
+                  <select class="form-select">
+                    <option>Python 3.11+ · FastAPI · LangGraph</option>
+                    <option>Python 3.12 · asyncio · aiohttp</option>
+                    <option>Node.js · Express · SQLite</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Target architecture</label>
+                  <select class="form-select">
+                    <option>Python 3.12 · FastAPI · ChromaDB</option>
+                    <option>Python 3.11 · asyncio · aiohttp</option>
+                    <option>Node.js 20 · Express · PostgreSQL</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Source repository</label>
+                <div style="display:flex; gap:10px;">
+                  <input class="form-input" type="text" value="github.com/souhardya-k/ai-service-log-analysis" readonly />
+                  <button class="btn btn-secondary" style="white-space:nowrap;" data-action="connect-repo">
+                    <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+                    Connected
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-head"><h2>Source upload</h2><span class="tag tag-blue">2 of 3 uploaded</span></div>
+              <div class="drop-zone" id="dropZone">
+                <svg viewBox="0 0 20 20"><path d="M10 3l4 4h-3v6h-2V7H6l4-4zM4 15h12v2H4v-2z" fill="currentColor"/></svg>
+                <div class="drop-zone-title">Drop additional folders or archives here</div>
+                <div class="drop-zone-sub">.zip, .tar, .gz, .jar, .war, .ear — up to 50 MB per batch</div>
+              </div>
+              <div class="file-list">
+                <div class="file-item">
+                  <div class="file-item-icon">
+                    <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5z" fill="currentColor"/></svg>
+                  </div>
+                  <div class="file-item-body">
+              <div class="file-item-name">backend/</div>
+              <div class="file-item-meta">69 Python files · 615 KB</div>
+                  </div>
+                  <span class="file-item-status done">&#10003; Uploaded</span>
+                </div>
+                <div class="file-item">
+                  <div class="file-item-icon">
+                    <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5z" fill="currentColor"/></svg>
+                  </div>
+                  <div class="file-item-body">
+              <div class="file-item-name">frontend/</div>
+              <div class="file-item-meta">29 JS files · 98 HTML · 66 PNG</div>
+                  </div>
+                  <span class="file-item-status done">&#10003; Uploaded</span>
+                </div>
+                <div class="file-item">
+                  <div class="file-item-icon">
+                    <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5z" fill="currentColor"/></svg>
+                  </div>
+                  <div class="file-item-body">
+              <div class="file-item-name">docs/</div>
+              <div class="file-item-meta">128 Markdown files · 61 TXT</div>
+                  </div>
+                  <span class="file-item-status uploading">Uploading 67%</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:16px;">
+
+            <div class="card">
+              <div class="card-head"><h2>Batch processing</h2></div>
+              <div class="settings-list">
+                <div class="setting-item">
+                  <div>
+                    <div class="setting-item-label">Batch size</div>
+                    <div class="setting-item-sub">Files per analysis batch</div>
+                  </div>
+                  <span class="setting-item-value">750 files</span>
+                </div>
+                <div class="setting-item">
+                  <div>
+                    <div class="setting-item-label">Parallel workers</div>
+                    <div class="setting-item-sub">Concurrent analysis threads</div>
+                  </div>
+                  <span class="setting-item-value">8 workers</span>
+                </div>
+                <div class="setting-item">
+                  <div>
+                    <div class="setting-item-label">Analysis depth</div>
+                    <div class="setting-item-sub">Call graph traversal level</div>
+                  </div>
+                  <span class="setting-item-value">Deep call graph</span>
+                </div>
+                <div class="setting-item">
+                  <div>
+                    <div class="setting-item-label">Retry policy</div>
+                    <div class="setting-item-sub">Failed batch retries</div>
+                  </div>
+                  <span class="setting-item-value">3 attempts</span>
+                </div>
+                <div class="setting-item">
+                  <div>
+                    <div class="setting-item-label">Incremental rescans</div>
+                    <div class="setting-item-sub">Detect and re-analyze changes</div>
+                  </div>
+                  <div class="toggle on"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <h3>Supported source formats</h3>
+              <p>Python 3.11+, Node.js, FastAPI, LangGraph, ChromaDB, PostgreSQL, SQLite, asyncio, aiohttp. External dependencies are extracted and analyzed for API contracts.</p>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, #0E1B33, #14264A); border:none; color:#C7D2E8;">
+              <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+                <div style="width:38px; height:38px; border-radius:10px; background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.4); display:flex; align-items:center; justify-content:center; color:#34D129; flex-shrink:0;">
+                  <svg viewBox="0 0 20 20" width="18" height="18"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+                </div>
+                <div>
+                  <div style="font-size:14px; font-weight:700; color:#fff;">Ready for analysis</div>
+                  <div style="font-size:11.5px; color:#8FA3CC;">All sources validated and indexed</div>
+                </div>
+              </div>
+              <p style="font-size:12px; color:#8FA3CC; line-height:1.5;">573 files queued across 8 batches. Estimated processing time: 12 minutes.</p>
+              <button data-action="start-analysis" class="btn btn-primary" style="width:100%; margin-top:14px; justify-content:center;">Start Analysis</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+  <script>
+    const dz = document.getElementById('dropZone');
+    if (dz) {
+      dz.addEventListener('dragover', (e) => { e.preventDefault(); dz.classList.add('dragover'); });
+      dz.addEventListener('dragleave', () => dz.classList.remove('dragover'));
+      dz.addEventListener('drop', (e) => { e.preventDefault(); dz.classList.remove('dragover'); });
+    }
+  </script>
+</body>
+</html>

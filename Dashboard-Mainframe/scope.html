@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Define Migration Scope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name">ai-service-log-analysis</span>
+          <span class="ap-badge">v0.1.0</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item active">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill">On track</span>
+        </div>
+        <div class="health-bar"><span style="width:68%"></span></div>
+        <p class="health-text">68% of approved scope migrated</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project">ai-service-log-analysis</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release">Migration scope</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <div class="page-head-row">
+          <div>
+            <h1>Define migration scope</h1>
+            <p class="page-sub">Describe the outcome, inspect dependency boundaries, and explicitly approve what AI may generate.</p>
+          </div>
+          <div class="page-head-actions">
+            <button data-action="save-scope-draft" class="btn btn-secondary">Save as draft</button>
+            <button data-action="approve-migrate" class="btn btn-primary">Approve Plan & Begin Migration</button>
+          </div>
+        </div>
+
+        <div class="scope-layout">
+
+          <div class="scope-assistant">
+            <h3>Migration assistant</h3>
+            <div class="sa-sub">AI-guided scope refinement</div>
+            <div class="sa-q">
+              <strong>What bounded capability would you like to migrate?</strong>
+              Payments / posting capability · Boundary P-07
+            </div>
+            <div class="sa-q">
+              <strong>Direct and transitive imports</strong>
+              34 direct dependencies. The proposed scope includes 12 files and 3 shared modules. Review the full list before approval.
+            </div>
+            <div class="sa-q">
+              <strong>Scope is intentionally bounded</strong>
+              Only approved files and their explicit dependencies are migrated. Everything else stays in the source system.
+            </div>
+          </div>
+
+          <div class="scope-main">
+
+            <div class="scope-header-card">
+              <h2>Selected migration scope</h2>
+              <div class="sh-sub">Payments / posting capability · Boundary P-07</div>
+              <div class="scope-header-stats">
+                <div class="sh-stat">
+                  <span class="sh-stat-val">18</span>
+                  <span class="sh-stat-label">Files in scope</span>
+                </div>
+                <div class="sh-stat">
+                  <span class="sh-stat-val">87</span>
+                  <span class="sh-stat-label">Dependencies</span>
+                </div>
+                <div class="sh-stat">
+                  <span class="sh-stat-val">615</span>
+                  <span class="sh-stat-label">LOC</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="scope-files-grid">
+              <div class="scope-file-card included">
+                <h4>&#10003; Included</h4>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">LogAnalyzerService.py</span>
+                  <span class="sfc-item-loc">1,247</span>
+                </div>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">LogController.py</span>
+                  <span class="sfc-item-loc">892</span>
+                </div>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">IncidentAdapter.py</span>
+                  <span class="sfc-item-loc">634</span>
+                </div>
+              </div>
+
+              <div class="scope-file-card excluded">
+                <h4>&#10007; Excluded</h4>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">LangGraphOrchestrator.java</span>
+                  <span class="sfc-item-loc">478</span>
+                </div>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">QdrantRetriever.py</span>
+                  <span class="sfc-item-loc">312</span>
+                </div>
+              </div>
+
+              <div class="scope-file-card unresolved">
+                <h4>&#9888; Unresolved</h4>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">LogClassifier.py</span>
+                  <span class="sfc-item-loc">267</span>
+                </div>
+                <div class="sfc-item">
+                  <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z" fill="currentColor"/></svg>
+                  <span class="sfc-item-name">NotificationService.java</span>
+                  <span class="sfc-item-loc">189</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="scope-warning">
+              <svg viewBox="0 0 20 20"><path d="M10 1l9 16H1L10 1zm1 6H9v5h2V7zm0 6H9v2h2v-2z" fill="currentColor"/></svg>
+              <div>
+                <div class="scope-warning-title">Explicit scope required</div>
+                <div class="scope-warning-text">Confirm the bounded scope, excluded components, and the remaining unresolved reflection targets. AI will only generate code for approved files.</div>
+              </div>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, #0E1B33, #14264A); border:none; color:#C7D2E8;">
+              <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+                <div style="flex:1; min-width:200px;">
+                  <div style="font-size:14px; font-weight:700; color:#fff;">Ready to approve migration scope?</div>
+                  <div style="font-size:12px; color:#8FA3CC; margin-top:3px;">12 files · 34 dependencies · 615 LOC will be migrated to FastAPI 0.110</div>
+                </div>
+                <button data-action="approve-migrate" class="btn btn-primary">Approve Plan & Begin Migration</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:14px;">
+            <div class="info-card">
+              <h3>Scope summary</h3>
+              <p><strong>12 files</strong> selected for migration. <strong>34 dependencies</strong> mapped across 4 modules. <strong>1 unresolved</strong> reflection targets require manual review before approval.</p>
+            </div>
+            <div class="info-card">
+              <h3>Target architecture</h3>
+              <p>Java 21 · FastAPI 0.110 · PostgreSQL. Generated code preserves source dependencies through explicit adapters and ports.</p>
+            </div>
+            <div class="info-card">
+              <h3>Risk assessment</h3>
+              <p><span class="tag tag-amber">Medium</span>&nbsp; 1 shared dependency (LangGraphOrchestrator, QdrantRetriever) remain in source system. Adapters will be generated to bridge the boundary.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

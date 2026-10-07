@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prodapt ModernizeAI — Architecture Modernization</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+            <defs>
+              <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3D7BFF"/>
+                <stop offset="100%" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+            <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#brandGrad)"/>
+            <path d="M10 22V10h6.2c3.4 0 5.8 2.1 5.8 5.2s-2.4 5.2-5.8 5.2h-3.4V22H10zm2.8-7.4h3.2c1.9 0 3-1.1 3-2.6s-1.1-2.6-3-2.6h-3.2v5.2z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Prodapt</span>
+          <span class="brand-sub">ModernizeAI</span>
+        </div>
+      </div>
+
+      <div class="active-project">
+        <span class="ap-label">Active project</span>
+        <div class="ap-card">
+          <span class="ap-name">ai-service-log-analysis</span>
+          <span class="ap-badge">v0.1.0</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+          Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h4l2 2h6a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" fill="currentColor"/></svg>
+          Projects
+        </a>
+        <a href="code-analysis.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+          Code Analysis
+        </a>
+        <a href="architecture.html" class="nav-item active">
+          <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+          Architecture
+        </a>
+        <a href="scope.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+          Migration Workspace
+        </a>
+        <a href="validation.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.4 2.1 3.1-.5 1 3 3 1-.5 3.1L21 12l-2 2.4.5 3.1-3 1-1 3-3.1-.5L10 23l-2.4-2-3.1.5-1-3-3-1 .5-3.1L-1 12l2-2.4L.5 6.5l3-1 1-3 3.1.5L10 1z" transform="scale(0.9) translate(1 1)" fill="currentColor"/></svg>
+          Validation
+        </a>
+        <a href="reports.html" class="nav-item">
+          <svg viewBox="0 0 20 20"><path d="M4 2h9l5 5v11a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1zm8 1.5V8h4.5L12 3.5zM6 11h8v1.6H6V11zm0 3.4h8V16H6v-1.6z" fill="currentColor"/></svg>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-health">
+        <div class="health-head">
+          <span>Project health</span>
+          <span class="health-pill">On track</span>
+        </div>
+        <div class="health-bar"><span style="width:68%"></span></div>
+        <p class="health-text">68% of approved scope migrated</p>
+      </div>
+
+      <div class="sidebar-user">
+        <div class="avatar">MK</div>
+        <div class="user-meta">
+          <span class="user-name">Maya Kim</span>
+          <span class="user-role">Migration Lead</span>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="crumb-project">ai-service-log-analysis</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-release">Architecture review</span>
+        </div>
+        <div class="topbar-search">
+          <svg viewBox="0 0 20 20"><path d="M8.5 3a5.5 5.5 0 014.2 9.2l4.1 4.1-1.4 1.4-4.1-4.1A5.5 5.5 0 118.5 3zm0 2a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" fill="currentColor"/></svg>
+          <input type="text" placeholder="Search files, modules, reports..." />
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" title="Notifications">
+            <svg viewBox="0 0 20 20"><path d="M10 2a5 5 0 00-5 5v3.1L3.6 13h12.8L15 10.1V7a5 5 0 00-5-5zm-2 12.5a2 2 0 004 0h-4z" fill="currentColor"/></svg>
+            <span class="dot"></span>
+          </button>
+          <button class="icon-btn" title="Help">
+            <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm.1 12.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm1.3-4.6c-.5.4-.7.6-.7 1.1h-1.6c0-1.2.6-1.8 1.3-2.4.5-.4.8-.7.8-1.2 0-.6-.5-1-1.2-1-.8 0-1.3.4-1.4 1.1H7c.1-1.6 1.3-2.6 3-2.6 1.7 0 2.9 1 2.9 2.4 0 .9-.4 1.5-1.2 2z" fill="currentColor"/></svg>
+          </button>
+          <button class="icon-btn" title="Settings">
+            <svg viewBox="0 0 20 20"><path d="M10 6.5A3.5 3.5 0 1010 13.5 3.5 3.5 0 0010 6.5zm8.3 5.1l1.7 1.3-2 3.4-2-.8a7.6 7.6 0 01-1.7 1l-.3 2.1h-4l-.3-2.1a7.6 7.6 0 01-1.7-1l-2 .8-2-3.4L5.7 11.6a7.7 7.7 0 010-2.2L4 8.1l2-3.4 2 .8a7.6 7.6 0 011.7-1L10 2.4h4l.3 2.1a7.6 7.6 0 011.7 1l2-.8 2 3.4-1.7 1.3c.1.7.1 1.5 0 2.2z" fill="currentColor"/></svg>
+          </button>
+          <div class="topbar-avatar">MK</div>
+        </div>
+      </header>
+
+      <main class="content">
+
+        <div class="page-head-row">
+          <div>
+            <h1>Architecture modernization</h1>
+            <p class="page-sub">Compare the source monolith with AI-suggested service boundaries before any migration scope is approved.</p>
+          </div>
+          <div class="page-head-actions">
+            <button data-action="modify-boundaries" class="btn btn-secondary">Modify boundaries</button>
+            <button data-action="approve-boundary" class="btn btn-primary">Approve selected boundary</button>
+          </div>
+        </div>
+
+        <div class="arch-stats">
+          <div class="arch-stat">
+            <div class="arch-stat-icon si-blue">
+              <svg viewBox="0 0 20 20"><path d="M10 2l8 4.5v9L10 20l-8-4.5v-9L10 2zm0 2.3L4 7.8v6.9l6 3.4 6-3.4V7.8l-6-3.5z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <div class="arch-stat-value">17</div>
+              <div class="arch-stat-label">Modules in monolith</div>
+            </div>
+          </div>
+          <div class="arch-stat">
+            <div class="arch-stat-icon si-purple">
+              <svg viewBox="0 0 20 20"><path d="M3 3h6v6H3zM11 3h6v4h-6zM11 9h6v8h-6zM3 11h6v6H3z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <div class="arch-stat-value">12</div>
+              <div class="arch-stat-label">Bounded services proposed</div>
+            </div>
+          </div>
+          <div class="arch-stat">
+            <div class="arch-stat-icon si-amber">
+              <svg viewBox="0 0 20 20"><path d="M7 4l-4 6 4 6h2l-4-6 4-6H7zm6 0h2l4 6-4 6h-2l4-6-4-6z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <div class="arch-stat-value">28</div>
+              <div class="arch-stat-label">Shared dependencies</div>
+            </div>
+          </div>
+          <div class="arch-stat">
+            <div class="arch-stat-icon si-green">
+              <svg viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.5 5.5l-4.2 4.2-2.3-2.3-1.4 1.4 3.7 3.7 5.6-5.6-1.4-1.4z" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <div class="arch-stat-value">24</div>
+              <div class="arch-stat-label">Cross-boundary calls</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-section">
+          <div class="arch-section-head">
+            <div>
+              <h2>Current monolith</h2>
+              <div class="arch-sub">5 modules · 34 cross-module calls · High coupling</div>
+            </div>
+          </div>
+          <div class="module-grid">
+            <div class="module-card selected">
+              <div class="module-card-head">
+                <div class="module-card-name">Payments</div>
+                <span class="tag tag-blue">Core</span>
+              </div>
+              <div class="module-card-loc">179 LOC · 214 classes</div>
+              <div class="module-card-deps">
+                <span class="tag tag-gray">Accounts</span>
+                <span class="tag tag-gray">Customer</span>
+                <span class="tag tag-gray">Risk</span>
+              </div>
+            </div>
+            <div class="module-card">
+              <div class="module-card-head">
+                <div class="module-card-name">Accounts</div>
+                <span class="tag tag-purple">Domain</span>
+              </div>
+              <div class="module-card-loc">12,33 LOC · 156 classes</div>
+              <div class="module-card-deps">
+                <span class="tag tag-gray">Payments</span>
+                <span class="tag tag-gray">Customer</span>
+              </div>
+            </div>
+            <div class="module-card">
+              <div class="module-card-head">
+                <div class="module-card-name">Customer</div>
+                <span class="tag tag-purple">Domain</span>
+              </div>
+              <div class="module-card-loc">9,217 LOC · 98 classes</div>
+              <div class="module-card-deps">
+                <span class="tag tag-gray">Accounts</span>
+                <span class="tag tag-gray">Risk</span>
+              </div>
+            </div>
+            <div class="module-card">
+              <div class="module-card-head">
+                <div class="module-card-name">Risk & Limits</div>
+                <span class="tag tag-amber">Shared</span>
+              </div>
+              <div class="module-card-loc">7,32 LOC · 67 classes</div>
+              <div class="module-card-deps">
+                <span class="tag tag-gray">Payments</span>
+                <span class="tag tag-gray">Accounts</span>
+                <span class="tag tag-gray">Customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-section">
+          <div class="arch-section-head">
+            <div>
+              <h2>Proposed bounded services</h2>
+              <div class="arch-sub">AI-suggested service boundaries based on dependency analysis</div>
+            </div>
+          </div>
+          <div class="module-grid">
+            <div class="module-card" style="border-color:rgba(46,107,255,0.3);">
+              <div class="module-card-head">
+                <div class="module-card-name">Payment Service</div>
+                <span class="tag tag-green">88% confidence</span>
+              </div>
+              <div class="module-card-loc">69 classes · 3 DB objects</div>
+              <div class="module-card-deps">
+                <span class="tag tag-blue">Approved</span>
+              </div>
+            </div>
+            <div class="module-card" style="border-color:rgba(112,92,246,0.3);">
+              <div class="module-card-head">
+                <div class="module-card-name">Account Ledger Service</div>
+                <span class="tag tag-green">76% confidence</span>
+              </div>
+              <div class="module-card-loc">48 classes · 2 DB objects</div>
+              <div class="module-card-deps">
+                <span class="tag tag-purple">In review</span>
+              </div>
+            </div>
+            <div class="module-card" style="border-color:rgba(112,92,246,0.3);">
+              <div class="module-card-head">
+                <div class="module-card-name">Customer Profile Service</div>
+                <span class="tag tag-green">82% confidence</span>
+              </div>
+              <div class="module-card-loc">13 classes · 1 DB objects</div>
+              <div class="module-card-deps">
+                <span class="tag tag-purple">In review</span>
+              </div>
+            </div>
+            <div class="module-card" style="border-color:rgba(245,158,11,0.3);">
+              <div class="module-card-head">
+                <div class="module-card-name">Risk & Limits Service</div>
+                <span class="tag tag-amber">64% confidence</span>
+              </div>
+              <div class="module-card-loc">29 classes · 4 DB objects</div>
+              <div class="module-card-deps">
+                <span class="tag tag-amber">Needs review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h2>Suggested service boundaries</h2>
+            <div style="display:flex; gap:8px;">
+              <span class="tag tag-blue">3 selected</span>
+              <a href="#" class="link">View all</a>
+            </div>
+          </div>
+          <table class="arch-table">
+            <thead>
+              <tr>
+                <th>Boundary</th>
+                <th>Business capability</th>
+                <th>Ownership scope</th>
+                <th>Confidence</th>
+                <th>Review status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Payment Service</strong></td>
+                <td>Log analysis</td>
+                <td>69 classes · 3 DB objects</td>
+                <td>
+                  <div class="confidence-bar">
+                    <div class="progress"><span class="bar-blue" style="width:94%"></span></div>
+                    <span class="confidence-pct">94%</span>
+                  </div>
+                </td>
+                <td><span class="status-badge sb-migrating">Approved</span></td>
+                <td><a href="#" class="link">Review</a></td>
+              </tr>
+              <tr>
+                <td><strong>Account Ledger Service</strong></td>
+                <td>Incident detection</td>
+                <td>48 classes · 2 DB objects</td>
+                <td>
+                  <div class="confidence-bar">
+                    <div class="progress"><span class="bar-purple" style="width:87%"></span></div>
+                    <span class="confidence-pct">87%</span>
+                  </div>
+                </td>
+                <td><span class="status-badge sb-validation">In review</span></td>
+                <td><a href="#" class="link">Review</a></td>
+              </tr>
+              <tr>
+                <td><strong>Customer Profile Service</strong></td>
+                <td>Knowledge retrieval</td>
+                <td>13 classes · 1 DB objects</td>
+                <td>
+                  <div class="confidence-bar">
+                    <div class="progress"><span class="bar-purple" style="width:91%"></span></div>
+                    <span class="confidence-pct">91%</span>
+                  </div>
+                </td>
+                <td><span class="status-badge sb-validation">In review</span></td>
+                <td><a href="#" class="link">Review</a></td>
+              </tr>
+              <tr>
+                <td><strong>Risk & Limits Service</strong></td>
+                <td>Resolution recommendation</td>
+                <td>29 classes · 4 DB objects</td>
+                <td>
+                  <div class="confidence-bar">
+                    <div class="progress"><span class="bar-amber" style="width:72%"></span></div>
+                    <span class="confidence-pct">72%</span>
+                  </div>
+                </td>
+                <td><span class="status-badge sb-analyzing">Needs review</span></td>
+                <td><a href="#" class="link">Review</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.querySelectorAll('.module-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        document.querySelectorAll('.module-card').forEach((c) => c.classList.remove('selected'));
+        card.classList.add('selected');
+      });
+    });
+  </script>
+</body>
+</html>
