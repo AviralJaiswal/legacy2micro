@@ -1,0 +1,12 @@
+{
+  "name": "mainframe-modern",
+  "version": "1.0.0",
+  "description": "Mainframe Modernization Suite",
+  "scripts": {
+    "start": "npx serve ./Dashboard-Mainframe -p 3000",
+    "dev": "npx serve ./Dashboard-Mainframe -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

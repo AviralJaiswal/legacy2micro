@@ -1,0 +1,14 @@
+{
+  "name": "dashboard-mainframe",
+  "version": "1.0.0",
+  "description": "Prodapt ModernizeAI Mainframe Modernization Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000",
+    "serve": "npx serve . -p 3000"
+  },
+  "keywords": ["mainframe", "modernization", "dashboard"],
+  "author": "",
+  "license": "ISC"
+}
